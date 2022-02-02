@@ -44,7 +44,7 @@ body {
   margin-right: 15%;
 }
 .welcome-section {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
 }
 .welcome-section p:first-of-type {
@@ -101,4 +101,52 @@ body {
   border-radius: 4px;
   font-size: 18px;
   padding-top: 8px;
+}
+/* About me Section */
+.aboutme-section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.aboutme-section h2 {
+  color: #a395e9;
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+.aboutme-section h2::after {
+  content: "";
+  width: 26%;
+  height: 1px;
+  background-color: #a395e9;
+  position: absolute;
+  top: 24px;
+  left: 440px;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.aboutme-description {
+  width: 45%;
+}
+.aboutme-description p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+.aboutme-description p:last-of-type {
+  margin-bottom: 0;
+}
+.personal-picture {
+  width: 400px;
+  height: 500px;
+  margin-right: 50px;
+  background-color: #fff;
+}
+.personal-picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 }
