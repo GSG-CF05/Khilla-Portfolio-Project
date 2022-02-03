@@ -73,26 +73,8 @@ body {
   margin-bottom: 24px;
   font-size: 18px;
 }
-.resume-btn {
-  width: 130px;
-  height: 45px;
-  background-color: #0b111e;
-  border: 2px solid #a395e9;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.resume-btn a:link,
-.resume-btn a:visited {
-  text-decoration: none;
-  color: #a395e9;
-  font-size: 18px;
-}
-.resume-btn:hover,
-.resume-btn a:hover {
-  background-color: #a395e9;
-  color: #fff;
-}
-.resume-link {
+.resume-link:link,
+.resume-link:visited {
   text-decoration: none;
   display: inline-block;
   border: 2px solid #a395e9;
@@ -103,6 +85,12 @@ body {
   border-radius: 4px;
   font-size: 18px;
   padding-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.resume-link:hover,
+.resume-link:active {
+  background-color: #a395e9;
+  color: #fff;
 }
 /* About me Section */
 .aboutme-section {
@@ -234,4 +222,55 @@ body {
   color: #5e4db0;
   font-size: 14px;
   margin-right: 10px;
+}
+.contact-section {
+  height: 100vh;
+  width: 100%;
+}
+.contact-section {
+  text-align: center;
+}
+.contact-section h2 {
+  color: #a395e9;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  direction: rtl;
+  padding-top: 180px;
+}
+.contact-section h2 span {
+  color: #5e4db0;
+  font-size: 24px;
+  margin-right: 8px;
+}
+.contact-section p:first-of-type {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.contact-section p:last-of-type {
+  color: #babec4;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.contact-section a:link,
+.contact-section a:visited {
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid #a395e9;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  color: #0b111e;
+  border-radius: 4px;
+  font-size: 18px;
+  padding-top: 8px;
+  background-color: #a395e9;
+}
+.contact-section a:hover,
+.contact-section a:active {
+  background-color: #bfb5f0;
+  border-color: #bfb5f0;
 }
