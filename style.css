@@ -36,12 +36,21 @@ body {
   gap: 32px;
   font-size: 18px;
 }
-.menu-bar li a {
+.menu-bar li span {
+  color: #babec4;
+  cursor: pointer;
+}
+.menu-bar li a:link,
+.menu-bar li a:visited,
+.menu-bar li a:active {
   text-decoration: none;
   color: #babec4;
 }
-.menu-bar li span {
-  color: #babec4;
+.menu-bar li:hover a {
+  color: #fff;
+}
+.menu-bar li:hover span {
+  color: #5e4db0;
 }
 /*  Home Page Section */
 .welcome-section {
@@ -57,20 +66,19 @@ body {
   color: #babec4;
   font-size: 24px;
   font-weight: 400;
-  margin-bottom: -10px;
+  margin-bottom: 10px;
 }
 .welcome-section h1 {
   color: #fff;
   font-size: 56px;
-  margin-bottom: -10px;
   letter-spacing: 3px;
-  /* line-height: 1.1; */
+  line-height: 1.1;
 }
 .comment-paragraph {
   color: #5e4db0;
   font-size: 22px;
   font-weight: 400;
-  margin-bottom: 22px;
+  margin-bottom: 26px;
 }
 .welcome-section p:last-of-type {
   color: #babec4;
@@ -131,17 +139,40 @@ body {
 .aboutme-description {
   width: 45%;
 }
+.aboutme-description p:first-of-type {
+  margin-top: 20px;
+}
 .aboutme-description p {
   font-size: 18px;
   line-height: 1.8;
   margin-bottom: 25px;
 }
 .aboutme-description p:last-of-type {
-  margin-bottom: 0;
+  margin-bottom: 30px;
+}
+.aboutme-description a:link,
+.aboutme-description a:visited {
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid #a395e9;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  color: #0b111e;
+  border-radius: 4px;
+  font-size: 18px;
+  padding-top: 8px;
+  background-color: #a395e9;
+  line-height: 30px;
+}
+.aboutme-description a:hover,
+.aboutme-description a:active {
+  background-color: #bfb5f0;
+  border-color: #bfb5f0;
 }
 .personal-picture {
   width: 400px;
-  height: 500px;
+  height: auto;
   margin-right: 50px;
   background-color: #fff;
 }
